@@ -1,13 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+<meta charset="UTF-8">
+<title>Portfolio — Pablo Bocanegra</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #1A0A24, #2A0F3A);
+        color: #EDE9F5;
+    }
+
+    .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 8vw;
+        position: relative;
+    }
+
+    .hero-content {
+        max-width: 600px;
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(120, 70, 180, 0.15), transparent 70%);
+        filter: blur(80px);
+        z-index: -1;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #F5F3FF;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin-bottom: 25px;
+        color: #D8CFF0;
+    }
+
+    p {
+        font-size: 1.1rem;
+        font-weight: 300;
+        margin-bottom: 40px;
+        color: #CBB9E8;
+    }
+
+    .cta-box {
+        display: flex;
+        gap: 20px;
+    }
+
+    .cta {
+        background: #5B3A7A;
+        padding: 15px 35px;
+        border-radius: 10px;
+        color: #F5F3FF;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+
+    .cta:hover {
+        background: transparent;
+        border-color: #CBB9E8;
+        transform: scale(1.05);
+    }
+
+    .hero-img {
+        width: 380px;
+        height: 380px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        box-shadow: 0 0 40px rgba(0,0,0,0.4);
+    }
+
+    #sobre-mi {
+        padding: 80px 8vw;
+        background: #14071C;
+    }
+
+    #sobre-mi h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #F5F3FF;
+    }
+
+    #sobre-mi p {
+        max-width: 700px;
+        font-size: 1.2rem;
+        color: #D8CFF0;
+        line-height: 1.7;
+    }
+
+    #temas {
+        padding: 80px 8vw;
+        background: #14071C;
+    }
+
+    #temas h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: #F5F3FF;
+    }
+
+    .tema-lista {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .tema {
+        background: #2A0F3A;
+        padding: 25px;
+        border-radius: 15px;
+        width: 250px;
+        text-align: center;
+        color: #EDE9F5;
+        font-size: 1.2rem;
+        transition: 0.3s;
+        border: 2px solid transparent;
+        text-decoration: none;
+        display: block;
+    }
+
+    .tema:hover {
+        transform: scale(1.05);
+        border-color: #5B3A7A;
+    }
+</style>
 </head>
+
 <body>
-    <h1> Módulo de Diseño de Interfaces Web</h1>
-    <a href="https://canva.link/vtdarhgwjvuu0ml">Actividad TimeLine Evolucion de la Web</a>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Pablo Bocanegra</h1>
+            <h2>Futuro Desarrollador Web · Técnico Informático en SMR</h2>
+            <p>Estudiante de segundo año en el curso 2026/2027 en Desarrollo de Aplicaciones Web (DAW) en el IES Nuestra Señora de los Remedios.</p>
+
+            <div class="cta-box">
+                <a href="#temas" class="cta">Ver actividades</a>
+                <a href="#sobre-mi" class="cta">Sobre mí</a>
+            </div>
+        </div>
+
+        <div class="hero-img" style="background-image: url('img/pableteesgrima.png');"></div>
+
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Soy Pablo Bocanegra Corrales, estudiante de Desarrollo de Aplicaciones Web apasionado por la programación, el diseño web y la creación de interfaces modernas. 
+            <br>Me gusta combinar estética oscura con elementos visuales elegantes y profesionales. 
+            Este portfolio recoge mi progreso, mis actividades y mi evolución como desarrollador a lo largo del curso 2026/2027.
+            <br>Como hobbies tengo los videojuegos, la música, y hacer páginas para uso personal tematizadas en fantasía, usandolas como listas de tareas para videojuegos,
+            lista de series por ver, o una especie de diccionario de personajes ficticios que gustan, con un desarrollo de su historia y notas personales, por lo que estoy familiarizado con el uso de HTML Y CSS.</p>
+    </section>
+
+    <section id="temas">
+        <h2>Selecciona un tema</h2>
+        <div class="tema-lista">
+            <a class="tema" href="#tema1">Tema 1</a>
+            <a class="tema" href="#tema2">Tema 2</a>
+            <a class="tema" href="#tema3">Tema 3</a>
+            <a class="tema" href="#tema4">Tema 4</a>
+        </div>
+    </section>
+
+    <section id="tema1" style="padding: 80px 8vw; background: #0F0516; color: #EDE9F5;">
+    <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: #F5F3FF;">Tema 1 — Actividades</h2>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+
+        <a href="tema 1/ejercicios/Ejercicio1_PabloBocanegra.png" style="background: #2A0F3A; padding: 25px; border-radius: 15px; width: 280px; text-align: center; color: #EDE9F5; font-size: 1.2rem; text-decoration: none; border: 2px solid transparent; transition: 0.3s;">
+            Actividad 1 — Línea del Tiempo
+        </a>
+
+        <a href="tema 1/ejercicios/Ejercicio2_PabloBocanegra.pdf" style="background: #2A0F3A; padding: 25px; border-radius: 15px; width: 280px; text-align: center; color: #EDE9F5; font-size: 1.2rem; text-decoration: none; border: 2px solid transparent; transition: 0.3s;">
+            Actividad 2 — Tendencias del Diseño Web
+        </a>
+
+        <a href="tema 1/ejercicios/Ejercicio3_PabloBocanegra.pdf" style="background: #2A0F3A; padding: 25px; border-radius: 15px; width: 280px; text-align: center; color: #EDE9F5; font-size: 1.2rem; text-decoration: none; border: 2px solid transparent; transition: 0.3s;">
+            Actividad 3 — Interfaz, UI y UX
+        </a>
+
+        <a href="tema 1/ejercicios/Ejercicio4_PabloBocanegra.pdf" style="background: #2A0F3A; padding: 25px; border-radius: 15px; width: 280px; text-align: center; color: #EDE9F5; font-size: 1.2rem; text-decoration: none; border: 2px solid transparent; transition: 0.3s;">
+            Actividad 4 — Principios del Diseño Interactivo
+        </a>
+
+        <a href="tema 1/ejercicios/Ejercicio5_PabloBocanegra.pdf" style="background: #2A0F3A; padding: 25px; border-radius: 15px; width: 280px; text-align: center; color: #EDE9F5; font-size: 1.2rem; text-decoration: none; border: 2px solid transparent; transition: 0.3s;">
+            Actividad 5 — Leyes del Diseño Web
+        </a>
+
+    </div>
+</section>
 
 </body>
 </html>
