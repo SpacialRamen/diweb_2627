@@ -1,0 +1,16 @@
+body {
+    background-color: #333;
+    color: white;
+}
+
+h1 {
+    color: lightblue;
+}
+
+h2 {
+    color: #ffff99;
+}
+
+footer {
+    border-top: 1px solid #666;
+}
