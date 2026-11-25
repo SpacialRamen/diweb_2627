@@ -30,7 +30,7 @@ main {
     width: 180px;
 }
 
-.tarjeta-destacada {
+.tarjeta--destacada {
     border: 2px solid orange;
     background-color: #fff3dc;
 }
